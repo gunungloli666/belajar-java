@@ -11,13 +11,16 @@ public class MyUnZip extends RenameFile {
 	static final int BUFFER = 2048;
 	
 	public MyUnZip(String source, String dest) {
+		
 		super(source);
 		this.dest = dest;
+		
 	}
 
 
 
 	public void extract() {
+		
 		for (int i = 0; i < filelist.length; i++) {
 
 			File f = filelist[i];
